@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fontawsome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="scores">
+            <p>Komputer
+                <span id="computer-score">0</span>
+            </p> 
+            <p> Sən
+                <span id="user-score">0</span>
+            </p> 
+        </div>
+        <div class="weapons">
+            <button  onclick="checker('Daş')">
+                <i class=" far fa-hand-rock"></i>
+            </button>
+            <button onclick="checker('Kağız')">
+                <i class=" far fa-hand-paper"></i>
+            </button>
+            <button onclick="checker('Qayçı')">
+                <i class=" far fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div class="details">
+            <p id="user-choice"></p>
+            <p id="computer-choice"></p>
+            <p id="result"></p>
+        </div>
+         
+    </div>
+    <script src="./Js/script.js "></script>
+</body>
+</html>
